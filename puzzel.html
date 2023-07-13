@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Number Puzzel</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<br>
+	<div class="hed">
+	 <h1>Sliding Tile Puzzle</h1></div>
+<div class="container">
+	<!-- <ul id="myList"></ul> -->
+	<div class="area">
+		<ul id="myList">
+			
+			<li><input type="button" id="b1" name="" value="1" onclick="btn(1)" class="_button"></li>
+			<li><input type="button" id="b2" name="" value="2" onclick="btn(2)" class="_button"></li>
+			<li><input type="button" id="b3" name="" value=" " onclick="btn(3)" class="_button" ></li>
+			<li><input type="button" id="b4" name="" value="4" onclick="btn(4)" class="_button"></li>
+			<li><input type="button" id="b5" name="" value="5" onclick="btn(5)" class="_button"></li>
+			<li><input type="button" id="b6" name="" value="6" onclick="btn(6)" class="_button"></li>
+			<li><input type="button" id="b7" name="" value="7" onclick="btn(7)" class="_button"></li> 
+			<li><input type="button" id="b8" name="" value="3" onclick="btn(8)" class="_button"></li>
+			<li><input type="button" id="b9" name="" value="8" onclick="btn(9)" class="_button"></li>	 
+		 </ul>
+	</div> 
+
+	<!-- ================================ Win box ==========================  -->
+	
+	<div class="overlay" id="overlay" hidden>
+    <div class="confirm-box">
+      <h2>Congratulation....... You win The Game ..... </h2><br><br>
+       <div class="btn_item">
+      <button onclick="isConfirm(true)" class="btn_con">Restart</button>
+      <button onclick="isConfirm(false)" class="btn_con">Close</button>
+  	</div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+	<script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
